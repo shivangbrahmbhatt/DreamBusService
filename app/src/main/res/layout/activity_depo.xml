@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.service.bus.activity.Depot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/iv_back_Depo"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_keyboard_backspace_white_24dp" />
+
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/depo_department_depopage"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_Depo_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextstyle"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:maxLines="1"
+                android:lines="1"
+                android:hint="@string/depo_name_depopage"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_Depo_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/edittextstyle"
+                android:maxLines="1"
+                android:lines="1"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="@string/depo_address"
+                android:inputType="text"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_Depo_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/edittextstyle"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:maxLines="1"
+                android:lines="1"
+                android:hint="@string/depo_email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_Depo_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:background="@drawable/edittextstyle"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:maxLines="1"
+                android:lines="1"
+                android:maxLength="12"
+                android:hint="@string/depo_contact"
+                android:inputType="number"
+                android:padding="@dimen/_10sdp"
+                android:textSize="@dimen/_15ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:background="@drawable/edittextstyle"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/proofdepo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sdp" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rb_Depo_proof"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/document"
+                        android:textColor="@color/black" />
+
+                    <android.support.v7.widget.AppCompatRadioButton
+                        android:id="@+id/rb_Depo_others_proof"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/others"
+                        android:textColor="@color/black" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_Depo_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/button"
+                android:text="@string/ok"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+

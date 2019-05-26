@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.service.dream.bus">
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcherlogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launcherlogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Login" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.FirstScreen" />
+        <activity android:name=".activity.ForgotPassword" />
+        <activity android:name=".activity.SignUp" />
+        <activity android:name=".activity.Organization" />
+        <activity android:name=".activity.Depot" />
+        <activity android:name=".activity.Verification" />
+        <activity android:name=".activity.RegisteredOrganizations" />
+        <activity android:name=".activity.Payment" />
+        <activity android:name=".activity.PaymentSuccess"></activity>
+    </application>
+
+</manifest>

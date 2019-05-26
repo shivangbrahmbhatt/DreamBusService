@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">SMART PASS</string>
+
+    <!--Homepage-->
+    <string name="smart_digital_pass_system">Smart Digital Pass System</string>
+    <string name="users">Users</string>
+    <string name="orgnization">Organization</string>
+    <string name="depo_department">Depot Department</string>
+
+    <!--Login Page-->
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="forgot_passwrd">Forgot Password?</string>
+    <string name="log_in">LOG IN</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+
+    <!--Sign Up Page-->
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="password1">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="email">Email</string>
+
+    <!--Forgot Password Page-->
+    <string name="request_password">Request Password</string>
+    <string name="forgot_password">Forgot Password</string>
+
+    <!--Organization Page-->
+    <string name="organization_name">Organization Name</string>
+    <string name="organization_address">Organization Address</string>
+    <string name="organization_email">Organization Email</string>
+    <string name="organization_contact">Organization Contact</string>
+    <string name="organization_proof">Organization Proof</string>
+    <string name="ok">OK</string>
+    <string name="document">Document</string>
+    <string name="others">Others</string>
+
+    <!--Renew Pass-->
+    <string name="id">ID:</string>
+    <string name="enter_user_id">Enter User ID</string>
+    <string name="source">Source:</string>
+    <string name="destination">Destination:</string>
+    <string name="peroid">Period:</string>
+    <string name="distance">Distance:</string>
+    <string name="enter_distance">Enter distance in kms </string>
+    <string name="renew_pass">Renew Pass</string>
+
+    <!--IssuePass-->
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="age">Age:</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="organization">Organization:</string>
+    <string name="enter_name_of_organization">Enter name of organization</string>
+    <string name="depo_name">Depot Name</string>
+    <string name="issue_pass">ISSUE PASS</string>
+    <string name="pan_card">Pan Card</string>
+    <string name="adhar_card">Adhar Card</string>
+    <string name="proof">Proof:</string>
+
+    <!--Sign Up-->
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="where_do_you_belong">Where do you belong?</string>
+    <string name="user_signup">User</string>
+    <string name="organization_signup">Organization</string>
+    <string name="admin">Admin</string>
+    <string name="depo_department_signup">Depot Department</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="back_to_login">Back to Login</string>
+    <string name="depo_department_depopage">Depot Department</string>
+    <string name="depo_name_depopage">Depot Name</string>
+    <string name="depo_address">Depot Address</string>
+    <string name="depo_email">Depot Email</string>
+    <string name="depo_contact">Depot Contact</string>
+    <string name="proofdepo">Proof:</string>
+
+</resources>

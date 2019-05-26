@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    tools:context="com.service.bus.activity.Depot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_userid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/id"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_user_id_issue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/edittextstyle"
+                android:maxLines="1"
+                android:lines="1"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="@string/enter_user_id"
+                android:inputType="text"
+                android:padding="@dimen/_8sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_name_issue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/edittextstyle"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="@string/enter_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:lines="1"
+                android:padding="@dimen/_8sdp"
+                android:textSize="@dimen/_14ssp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_source"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/source"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_source_issue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/edittextstyle"
+                android:padding="@dimen/_8sdp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_destination"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/destination"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_destination_issue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/edittextstyle"
+                android:padding="@dimen/_8sdp"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_period"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/peroid"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_period_issue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/edittextstyle"
+                android:padding="@dimen/_8sdp"
+                android:textAlignment="center" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/distance"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_distance_issue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/edittextstyle"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="@string/enter_distance"
+                android:maxLines="1"
+                android:lines="1"
+                android:inputType="numberDecimal"
+                android:padding="@dimen/_8sdp"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_age"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/age"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_age_issue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/edittextstyle"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="@string/enter_age"
+                android:inputType="number"
+                android:maxLines="1"
+                android:lines="1"
+                android:padding="@dimen/_8sdp"
+                android:textSize="@dimen/_14ssp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_organization_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/organization"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <android.support.v7.widget.AppCompatEditText
+                android:id="@+id/et_oraganization_name_issue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/edittextstyle"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="@string/enter_name_of_organization"
+                android:inputType="text"
+                android:maxLines="1"
+                android:lines="1"
+                android:padding="@dimen/_8sdp"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_depo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:text="@string/depo_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_depo_issue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:background="@drawable/edittextstyle"
+                android:padding="@dimen/_8sdp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_upload"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:text="Click to Upload"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp" />
+        <ImageButton
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imageButton"
+            android:clickable="true"
+            android:layout_marginTop="5dp" />
+        </LinearLayout>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_renew_pass"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/button"
+            android:text="@string/issue_pass"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</ScrollView>

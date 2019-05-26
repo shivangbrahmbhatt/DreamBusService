@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "148289898960",
+    "firebase_url": "https://smart-pass-51428.firebaseio.com",
+    "project_id": "smart-pass-51428",
+    "storage_bucket": "smart-pass-51428.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148289898960:android:dd57f43e63a84e2a",
+        "android_client_info": {
+          "package_name": "com.service.dream.bus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148289898960-p9j3tqqslagm2ijs62ndrnvbcpg6920k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpL03iIMWyPxVtlI1f0I2gQKKCSaLcQUk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
